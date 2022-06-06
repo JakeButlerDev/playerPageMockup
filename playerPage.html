@@ -5,6 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player Page</title>
+    <style>
+        img {
+            width: 75%;
+            height: 50%;
+            object-fit: contain;
+            justify-content: center;
+            /* Would still want to make img good amount smaller but this will do for now */
+            /* Also would like to center photo? Better image manipulation needed in general */
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 75%;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        th {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+    </style>
 </head>
 <body>
     <div id="header">
@@ -13,22 +39,30 @@
         <br>
         <br>
         <br>
-        <img src="https://library.sportingnews.com/2021-12/trent-alexander-arnold-liverpool-newcastle-december-16-2021_1k9qg9rbnp2im1su3rux0tlmcr.jpg"></image>
-        <style>
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-                /* Would still want to make img good amount smaller but this will do for now */
-            }
-
-        </style>
+        <img src="https://library.sportingnews.com/2021-12/trent-alexander-arnold-liverpool-newcastle-december-16-2021_1k9qg9rbnp2im1su3rux0tlmcr.jpg">
+        </img>
+        
 
     </div>
     
     <div id="main">
         <!-- Of course followed by table of stats, season by season of previous years and game by game for current season -->
         <!-- Want another table for fantasy stats, current rankings within landscape -->
+        <!-- Need to lookup how to inject tables into HTML DOM -->
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Team</th>
+                    <th>Season</th>
+                </tr>
+            </thead>
+
+            <tbody id="playerStatsTable">
+
+            </tbody>
+        </table>
 
     </div>
 
